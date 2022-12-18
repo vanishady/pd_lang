@@ -1,4 +1,4 @@
-grammar Simplee;
+grammar Simple;
 
 /*
 * parser rules
@@ -38,7 +38,7 @@ parameters
  ;
 
 typedargslist
- : arg (',' arg)* 
+ : arg (',' arg)* (',' INOUTID '=' (NODETYPE parameters | expr) )*
  ;
 
 arg
